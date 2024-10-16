@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout 2</title>
+    <link rel="stylesheet" href="checkout-2.css" />
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="date-section">
+      <label for="table-date">Date:</label>
+      <input type="date" id="table-date" placeholder="Enter date here" />
+    </div>
+
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th>Hours</th>
+          <th>Cocktail</th>
+          <th>Tips/Tip Pool</th>
+          <th>Overtip/Overgrat</th>
+          <th>Final Pay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Hours">
+            <input
+              type="number"
+              class="hours-input"
+              placeholder="Enter amount"
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="hours-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+          </td>
+          <td data-label="Cocktail">
+            <input type="text" placeholder="Enter name" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+            <input type="text" placeholder="" />
+          </td>
+          <td data-label="Tips/Tip Pool">
+            <input
+              type="number"
+              class="tip-input"
+              placeholder="Enter amount"
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+            <input
+              type="number"
+              class="tip-input"
+              placeholder=""
+              oninput="calculateTotals()"
+            />
+          </td>
+          <td data-label="Overtip/Overgrat">
+            <input type="number" placeholder="Enter amount" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+            <input type="number" placeholder="" />
+          </td>
+          <td data-label="Final Pay">
+            <input
+              type="number"
+              class="final-pay"
+              placeholder="Enter amount"
+              readonly
+            />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+            <input type="number" class="final-pay" placeholder="" readonly />
+          </td>
+        </tr>
+
+        <tr class="totals-section">
+          <td colspan="5">
+            <table class="totals-table">
+              <tr>
+                <td><label for="total-tips">Total Tips:</label></td>
+                <td>
+                  <input
+                    type="number"
+                    id="total-tips"
+                    placeholder="Enter amount"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="total-tips-percent">Total Tips * 1.8%:</label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="total-tips-percent"
+                    placeholder="Enter amount"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="total-tips-minus">Total Tips - 1.8%:</label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="total-tips-minus"
+                    placeholder="Enter amount"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="hours">Hours:</label></td>
+                <td>
+                  <input
+                    type="number"
+                    id="hours"
+                    placeholder="Enter amount"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="per-hour">Per Hour:</label></td>
+                <td>
+                  <input
+                    type="number"
+                    id="per-hour"
+                    placeholder="Enter amount"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="cash">Cash:</label></td>
+                <td>
+                  <input type="number" id="cash" placeholder="Enter amount" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Submit Button -->
+    <div class="submit-section">
+      <button type="button" onclick="handleSubmit()">Submit</button>
+    </div>
+
+    <!-- JavaScript for calculations -->
+    <script>
+      function calculateTotals() {
+        // Get all tip inputs and sum them
+        let tipInputs = document.querySelectorAll(".tip-input");
+        let totalTips = Array.from(tipInputs).reduce(
+          (sum, input) => sum + (parseFloat(input.value) || 0),
+          0
+        );
+        document.getElementById("total-tips").value = totalTips;
+
+        // Calculate Total Tips * 1.8%
+        let totalTipsPercent = totalTips * 0.018;
+        document.getElementById("total-tips-percent").value =
+          totalTipsPercent.toFixed(3);
+
+        // Calculate Total Tips - 1.8%
+        let totalTipsMinus = totalTips - totalTipsPercent;
+        document.getElementById("total-tips-minus").value =
+          totalTipsMinus.toFixed(3);
+
+        // Get all hour inputs and sum them
+        let hourInputs = document.querySelectorAll(".hours-input");
+        let totalHours = Array.from(hourInputs).reduce(
+          (sum, input) => sum + (parseFloat(input.value) || 0),
+          0
+        );
+        document.getElementById("hours").value = totalHours;
+
+        // Calculate Per Hour (Total Tips - 1.8%) / Hours
+        let perHour = totalHours > 0 ? totalTipsMinus / totalHours : 0;
+        document.getElementById("per-hour").value = perHour.toFixed(3);
+
+        // Calculate each Final Pay (Per Hour * individual Hours)
+        hourInputs.forEach((hourInput, index) => {
+          let hours = parseFloat(hourInput.value) || 0;
+          let finalPay = perHour * hours;
+          document.querySelectorAll(".final-pay")[index].value =
+            finalPay.toFixed(3);
+        });
+      }
+    </script>
+  </body>
+</html>

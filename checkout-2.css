@@ -1,0 +1,150 @@
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid #000;
+}
+
+thead th {
+  background-color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.5;
+  padding: 10px;
+  text-align: center;
+  border: 0.5px solid #000;
+}
+
+tbody td {
+  border: 0.5px solid #000;
+  /* Adds border to table cells */
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5;
+  vertical-align: top;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #333;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  font-family: "Barlow";
+}
+
+/* General styling for input fields */
+input[type="number"],
+input[type="text"] {
+  /* width: 100%;  */
+  min-width: 80px;
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: "Barlow";
+  font-weight: 400;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  input[type="number"],
+  input[type="text"] {
+    font-size: 14px; /* Slightly smaller font on small screens */
+    padding: 6px; /* Reduces padding for smaller screen real estate */
+  }
+}
+
+/* Totals section styling */
+.totals-section {
+  background-color: #fff;
+  padding: 10px;
+  /* border: 0.5px solid #000;s */
+}
+
+.totals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.totals-table td {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.totals-table label {
+  font-weight: 400;
+  letter-spacing: 0.5;
+  margin-right: 10px;
+}
+
+.totals-table input {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+/* Date Section Styling */
+.date-section {
+  margin-bottom: 15px;
+  display: flex;
+  font-family: "Barlow";
+  font-size: 20px;
+}
+
+.date::placeholder {
+  font-family: "Barlow";
+  color: #000;
+}
+
+.date-section label {
+  font-weight: 400;
+  margin-right: 10px;
+  font-family: "Barlow";
+}
+
+.date-section input {
+  padding: 5px;
+  width: 200px;
+  box-sizing: border-box;
+  border: 0.5px solid #333;
+  font-family: "Barlow";
+}
+
+.submit-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3ms ease;
+}
+
+.submit-section button:hover {
+  background-color: #ffdf80;
+}
+
+.submit-section button:active {
+  background-color: #ffd900e1;
+}
