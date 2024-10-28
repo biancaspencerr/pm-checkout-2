@@ -18,258 +18,286 @@
       <input type="date" id="table-date" placeholder="Enter date here" />
     </div>
 
-    <table class="responsive-table">
-      <thead>
-        <tr>
-          <th>Hours</th>
-          <th>Cocktail</th>
-          <th>Tips/Tip Pool</th>
-          <th>Overtip/Overgrat</th>
-          <th>Final Pay</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Hours">
-            <input
-              type="number"
-              class="hours-input"
-              placeholder="Enter amount"
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="hours-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-          </td>
-          <td data-label="Cocktail">
-            <input type="text" placeholder="Enter name" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-            <input type="text" placeholder="" />
-          </td>
-          <td data-label="Tips/Tip Pool">
-            <input
-              type="number"
-              class="tip-input"
-              placeholder="Enter amount"
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-            <input
-              type="number"
-              class="tip-input"
-              placeholder=""
-              oninput="calculateTotals()"
-            />
-          </td>
-          <td data-label="Overtip/Overgrat">
-            <input type="number" placeholder="Enter amount" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-            <input type="number" placeholder="" />
-          </td>
-          <td data-label="Final Pay">
-            <input
-              type="number"
-              class="final-pay"
-              placeholder="Enter amount"
-              readonly
-            />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-            <input type="number" class="final-pay" placeholder="" readonly />
-          </td>
-        </tr>
+    <div class="table-wrapper">
+      <table class="responsive-table">
+        <thead>
+          <tr>
+            <th>Hours</th>
+            <th>Cocktail</th>
+            <th>Tips/Tip Pool</th>
+            <th>Overtip/Overgrat</th>
+            <th>Final Pay</th>
+            <th>Min Spend</th>
+            <th>Actual Spent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Hours">
+              <input
+                type="number"
+                class="hours-input"
+                placeholder="Enter amount"
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="hours-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+            </td>
+            <td data-label="Cocktail">
+              <input type="text" placeholder="Enter name" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+              <input type="text" placeholder="" />
+            </td>
+            <td data-label="Tips/Tip Pool">
+              <input
+                type="number"
+                class="tip-input"
+                placeholder="Enter amount"
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+              <input
+                type="number"
+                class="tip-input"
+                placeholder=""
+                oninput="calculateTotals()"
+              />
+            </td>
+            <td data-label="Overtip/Overgrat">
+              <input type="number" placeholder="Enter amount" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+            </td>
+            <td data-label="Final Pay">
+              <input
+                type="number"
+                class="final-pay"
+                placeholder="Enter amount"
+                readonly
+              />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+              <input type="number" class="final-pay" placeholder="" readonly />
+            </td>
+            <td data-label="Min Spend">
+              <input type="number" placeholder="Enter amount" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+            </td>
+            <td data-label="Actual Spent">
+              <input type="number" placeholder="Enter amount" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+              <input type="number" placeholder="" />
+            </td>
+          </tr>
 
-        <tr class="totals-section">
-          <td colspan="5">
-            <table class="totals-table">
-              <tr>
-                <td><label for="total-tips">Total Tips:</label></td>
-                <td>
-                  <input
-                    type="number"
-                    id="total-tips"
-                    placeholder="Enter amount"
-                    readonly
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="total-tips-percent">Total Tips * 1.8%:</label>
-                </td>
-                <td>
-                  <input
-                    type="number"
-                    id="total-tips-percent"
-                    placeholder="Enter amount"
-                    readonly
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="total-tips-minus">Total Tips - 1.8%:</label>
-                </td>
-                <td>
-                  <input
-                    type="number"
-                    id="total-tips-minus"
-                    placeholder="Enter amount"
-                    readonly
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td><label for="hours">Hours:</label></td>
-                <td>
-                  <input
-                    type="number"
-                    id="hours"
-                    placeholder="Enter amount"
-                    readonly
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td><label for="per-hour">Per Hour:</label></td>
-                <td>
-                  <input
-                    type="number"
-                    id="per-hour"
-                    placeholder="Enter amount"
-                    readonly
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td><label for="cash">Cash:</label></td>
-                <td>
-                  <input type="number" id="cash" placeholder="Enter amount" />
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          <tr class="totals-section">
+            <td colspan="7">
+              <table class="totals-table">
+                <tr>
+                  <td><label for="total-tips">Total Tips:</label></td>
+                  <td>
+                    <input
+                      type="number"
+                      id="total-tips"
+                      placeholder="Enter amount"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="total-tips-percent">Total Tips * 1.8%:</label>
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="total-tips-percent"
+                      placeholder="Enter amount"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="total-tips-minus">Total Tips - 1.8%:</label>
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="total-tips-minus"
+                      placeholder="Enter amount"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="hours">Hours:</label></td>
+                  <td>
+                    <input
+                      type="number"
+                      id="hours"
+                      placeholder="Enter amount"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="per-hour">Per Hour:</label></td>
+                  <td>
+                    <input
+                      type="number"
+                      id="per-hour"
+                      placeholder="Enter amount"
+                      readonly
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="cash">Cash:</label></td>
+                  <td>
+                    <input type="number" id="cash" placeholder="Enter amount" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <!-- Submit Button -->
     <div class="submit-section">
