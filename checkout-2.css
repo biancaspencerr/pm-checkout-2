@@ -22,6 +22,8 @@ table {
   width: 100%;
   min-width: 700px;
   border-collapse: collapse;
+  border-spacing: 0;
+
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
   border: 0.5px solid #000;
 }
@@ -159,4 +161,19 @@ input[type="text"] {
 
 .submit-section button:active {
   background-color: #ffd900e1;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000; /* Ensures all table borders are set */
+  border-collapse: collapse;
+}
+
+@media (max-width: 600px) {
+  table,
+  th,
+  td {
+    border: 1.5px solid #000; /* Slightly thicker borders on small screens */
+  }
 }
